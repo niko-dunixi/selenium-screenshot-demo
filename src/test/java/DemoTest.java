@@ -17,7 +17,7 @@ public class DemoTest {
     public void demonstrateScreenshotTest() throws IOException {
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.amazon.com/dp/055338256X/?tag=stackoverfl08-20");
+        driver.get("https://en.wikipedia.org/wiki/Special:Random");
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         // This move is necessary, the original file is temporary and gets deleted after java exists
         File resultingScreenshot = new File(System.getProperty("user.home"), "screenshot.png");
